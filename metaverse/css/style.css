@@ -1,0 +1,379 @@
+/*Navbar*/
+
+
+.navbar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 6em;
+    margin-top: 3em;
+}
+
+.navbar-nav .nav-link  {
+    margin-left: 20px;/*espaço entre cada palavra do navbar*/
+    letter-spacing: 2px;/*espaço entre cada letra do navbar*/
+  
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #f5f5f5; /*Cor da letra do navbar*/
+    font-size: 22px;/* tamanho das letras do navbar*/
+    font-weight: 700;
+    font-family: 'Dosis';
+    
+    
+}
+.navbar .container .logo1 {
+    padding-left: 3em;
+    
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #1e0431; /**ao passar por cima das letras(navbar)*/
+    
+}
+
+.offcanvas {
+    position: fixed;
+    bottom: 0;
+    z-index: 1045;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    visibility: hidden;
+    background-color:#4f1d76;
+    background-clip: padding-box;
+    outline: 0;
+    transition: transform .3s ease-in-out;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgb(4, 4, 4);
+}
+
+ /*  Home   inicio  */
+.home{
+    display: flex;
+    background-image : url('../img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 400px;
+    font-family: 'Kanit', sans-serif, bold;
+}
+.home .max-width {
+    margin: auto 0 auto 100px;
+  /*Cor e tamanho das letras do titulo da img principal  */
+}
+
+.home .home-content .text-1 {/*Titulo 1 do background*/
+    letter-spacing: 0px;
+    font-size: 59px;
+    font-weight: 500;
+    margin-left: auto;
+    color: white;
+    font-weight: 500;
+    padding: -5px;
+    font-family: 'Kanit', sans-serif;
+    
+}
+.home .home-content .text-2 {/*Titulo 2 do background*/
+    font-size: 25px;
+    margin: 3px 0px;
+    color:#ffffff;
+    font-family: 'Kanit', sans-serif;
+}
+.home .home-content a:hover {
+    background: none;
+}
+
+/*  imagem  do lado do retanglo */
+
+.img-fluid{
+    width: 16em;
+    height: 35em;
+    object-fit: cover;
+    border-radius: 1.5em;
+    margin-left: 19.2em;
+    margin: 30%;
+    top:3em;
+}
+
+/*retangulo branco*/
+.retangulo{
+    margin:0em;
+    margin-top: -43em;
+    margin-left: 15em;
+    box-sizing: border-box;
+    width: 41em;   
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+#origem{
+    font-weight: 100;
+    font-size: 25px;
+    font-family: 'Dosis';
+    text-align: center;
+    color: #040404;
+    padding: 2em;
+}
+#metaverso{
+    font-family: 'Dosis';
+    font-size: 64px;
+    line-height: 81px;
+    text-align: center;
+    background: linear-gradient(180deg, #BD1515 3.65%, #A615BD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#resumo{
+    padding: 5em;
+    margin: 4.5em ;
+}
+
+
+/* As três Características do Metaverso titulo */
+
+.title {
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 4em;
+    left: 2.5em;
+    background: linear-gradient(180deg, #dd136eb2 3.65%, #830796c9 100%);
+    font-family: 'Dosis';
+    font-size: 2.2em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: backInLeft;
+    animation-duration: 1.5s;  
+    
+}
+
+/*CARDS*/
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 1em;
+    transition: 0.8s;
+}
+main.cards section.card:hover {
+    transform: scale(1.1);
+}
+
+main.cards {
+    margin-top: -6em;
+    display: flex;
+    gap:2.5em; /* LARGURA DE UM CARD E OUTRO (CERTO DESSA VEZ ANA JULIA JUMENTO) */
+    padding: 190px;
+}
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+main.cards section.card img {
+    width: 105%;
+}
+main.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 90%;
+    margin: 16px 0;
+}
+main.cards section.card.intera{ /*cor em volta dos cardes*/
+    box-shadow: 20px 20px 50px -30px #5d1a87;
+}
+main.cards section.card.incorpo {
+    box-shadow: 20px 20px 50px -30px #025fc3fd;
+}
+main.cards section.card.persis {
+    box-shadow: 20px 20px 50px -30px #de4e7c;
+}
+
+/*carrossel*/
+.w-100 {
+    width: 70%!important;
+    margin:auto;
+    border-radius: 7px;
+}
+.count2 {
+    text-align: left;
+    padding: 6em;
+    background-color: #330F4F;
+ 
+
+}
+.count2 .letra {
+    font-size: 25px;
+    font-family: 'Dosis';
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.count2 .giphy-embed {
+    margin: 7em;
+    padding: 6em;
+}
+
+/*  sessão footer  */
+footer{
+    height: 10%;
+    background-color:#330F4F;   
+     padding: 20px ;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: #ffffff;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+.navbar .container .logo1 {
+    margin-left: -3em;
+}
+
+/*responsividade pagina inicial */
+
+@media screen and (max-width: 720px) /*celular*/ {
+    .navbar .container .logo1{
+      width: 7em;
+      height: 3em;
+      margin-top: -3em;
+    }
+    nav img {
+        width: 10%;
+    }
+   
+    .home .max-width {
+        margin: 50px 30px;
+    }
+    .home {
+        height: 20vh;
+    }
+    .home .home-content {
+        text-align: left;
+        margin-top: 25%;
+    }
+    .home .home-content .text-1 {
+        font-size: 40px;
+    }
+    .home .home-content .text-2 {
+        font-size: 16px;
+    }
+    .img-fluid{
+        width: 13em;
+        height: 26em;
+        object-fit: cover;
+        border-radius: 1.5em;
+        margin: 10em ;
+        margin-left: -10em;
+    }
+    .retangulo{
+        margin-left: -8em;
+        margin-top: -35em;
+        width: 26em;   
+        height: 24em;
+    }
+    #origem {
+        font-size: 20px;
+        margin: 0;
+    }
+    #metaverso{
+        margin: -0.2em;
+    }
+    .text-center.title{
+        margin-top: 3em;
+        margin-left: -10em;
+        width: 8em;
+        height: 2em;
+        top: 10em;
+        padding: 5px;
+    }
+    main.cards {
+        margin: 4em;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+    main.cards section.card:last-child {
+        margin-bottom:0;
+    }
+    main.cards section.card button {
+        font-size: 70%;
+    }
+    .count2 {
+        padding: 40px 30px 0px 30px;
+        margin: auto;
+    }
+    .count2 .letra {
+        text-align: center;
+        font-size: 15px;
+    }
+    .w-100{
+        width: 75% !important;
+        margin: auto;
+    }
+    .options {
+        color: #350F34;
+    }
+}
+
+ 
+/* Página Investimentos*/
+
+
+/*.navbar-brand{ /*Posição da logo
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+ .navbar .navbar-pags .nav-lista   {
+   color: #4f1d76;
+} 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

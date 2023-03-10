@@ -1,0 +1,159 @@
+/* pagina investimentos */
+
+
+/*Começo do NAVBAR */
+.navbar {
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 6em;
+    margin-top: 3em;
+}
+.navbar-nav .nav-link  {
+    margin-left: 20px;/*espaço entre cada palavra do navbar*/
+    letter-spacing: 2px;/*espaço entre cada letra do navbar*/
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #330F4F; /*Cor da letra do navbar*/
+    font-size: 22px;/* tamanho das letras do navbar*/
+    font-weight: 700;
+    font-family: 'Dosis';
+}
+.navbar-invest .navbar-nav .nav-link {
+    color: #330F4F;
+}
+.navbar-expand-sm .navbar-nav {
+    margin-left: 70em;
+    margin-top: -3em;
+}
+.navbar-brand .logoo{
+    margin-top: 3em;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #610661; /**ao passar por cima das letras(navbar)*/
+    
+}
+.offcanvas {
+    position: fixed;
+    bottom: 0;
+    z-index: 1045;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    visibility: hidden;
+    background-color:#4f1d76;
+    background-clip: padding-box;
+    outline: 0;
+    transition: transform .3s ease-in-out;
+}
+h3 {
+    margin: 50px 100px;
+    font-family: 'Dosis';
+    text-align: center;
+}
+h2 {
+    font-family: 'Dosis';
+    font-size: 40px;
+    text-align: center;
+}
+.titl-2 {
+    text-align: center;
+}
+
+/*FINAL DO NAVBAR */
+
+
+ /**parte da imagem**/
+.img-fluid { 
+    position: static;
+    margin-top: 6em;
+    width: 50vw;
+}
+
+h1 {
+    font-family: 'Dosis';
+    background: linear-gradient(180deg, #4d0f43 0%, #B23DC6 78.65%);
+    font-size: 2.2em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    margin-left: 12em;
+}
+
+/*  pagina avateres */
+.ava1{
+    font-family: 'Dosis';
+    background: linear-gradient(180deg, #4d0f43 0%, #B23DC6 78.65%);
+    font-family: 'Dosis';
+    font-size: 2.2em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 3em; 
+    font-size: 3em;
+    margin: 2em;
+}
+
+.flex-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 200px;
+}
+
+.flex-img div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.img-fluid-ava {
+    width: 850px;
+}
+
+/*  sessão footer  */
+footer{
+
+    height: 10%;
+    background-color:#330F4F;   
+    padding: 20px ;
+    color: #fff;
+    text-align: center;
+    height: 10%;
+    background-color:#330F4F;   
+    padding: 20px ;
+    color: #fff;
+    text-align: center;
+
+}
+footer span a{
+    color: #ffffff;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+.navbar .container .logo1 {
+    margin-left: -3em;
+}
+
+ /*Responsividade*/
+
+@media screen and (max-width: 320px) /*celular*/ {
+    .titulo-3{
+        width: 15em;
+        margin-left: 1em;
+        margin: 1em;
+    }
+    .navbar-light .navbar-toggler{
+        margin-left: 10px;
+        margin-top: 100px;
+        position: absolute;
+    }
+
+    .img{
+        width: 7em;
+    }
+
+
+}
